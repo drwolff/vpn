@@ -8,7 +8,7 @@
       nmcli con list | grep -i vpn
 3.  edit your /etc/rc.d/rc.local with code from this repo
       
-      remember to change *** to your VPN uuid
+      https://raw.githubusercontent.com/drwolff/immortal_vpn/master/rc.local
 4.  configure VPN kill switch
       
       https://linuxconfig.org/how-to-create-a-vpn-killswitch-using-iptables-on-linux
