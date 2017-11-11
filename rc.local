@@ -1,9 +1,9 @@
 !/bin/bash
 (while [ "true" ]
 do
-       ivpn=$(nmcli con show uuid **** | grep VPN.VPN-STATE | awk '{print $2}')
+       ivpn=$(nmcli con show uuid *** | grep VPN.VPN-STATE | awk '{print $2}')
        if [[ $ivpn != "5" ]]; then
-               (sleep 1s && nmcli connection up uuid ****)
+               (sleep 1s && nmcli connection up uuid ***)
        else
                echo "Connected"
        fi
