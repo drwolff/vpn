@@ -2,7 +2,7 @@
 (while [ "true" ]
 do
         ivpn=$(nmcli con show uuid *** | awk '/VPN.VPN-STATE/{print $2}')
-        if [[ $ivpn != "5" ]]; then
+        if [[ x$ivpn != "x5" ]]; then
                 (sleep 1 && nmcli connection up uuid ***)
         else
                 sleep 30
