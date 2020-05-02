@@ -30,9 +30,13 @@ Connect to the fastest secure core server
       
       protonvpn c --sc
       
-### 6. Edit /etc/rc.d/rc.local
+### 6. Edit rc.local
+
+      vi /etc/rc.d/rc.local
 
 https://raw.githubusercontent.com/drwolff/immortal_vpn/master/protonvpn
+      
+      chmod +x rc.local
       
       reboot
       
@@ -46,21 +50,21 @@ https://docs.pi-hole.net/main/basic-install/
       
 ### 8. Update VMware DNS settings
 
-Network and Internet settings
+      Network and Internet settings
 
-Change adapter options
+      Change adapter options
 
-Right-click VMware Network Adapter VMnet8
+      Right-click VMware Network Adapter VMnet8
 
-Click Properties
+      Click Properties
 
-Double-click Internet Protocol Version 4 (TCP/IPv4)
+      Double-click Internet Protocol Version 4 (TCP/IPv4)
 
-Use the following DNS server addresses:
+      Use the following DNS server addresses:
       
-Preferred DNS server: your Fedora VM's IP address
+            Preferred DNS server: your Fedora VM's IP address
 
-Click OK twice
+      Click OK twice
       
 ### 9. Update your host OS DNS settings
 
