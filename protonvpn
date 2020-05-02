@@ -1,0 +1,10 @@
+#!/bin/bash
+(while [ "true" ]
+do
+        ivpn=$(protonvpn s | awk '/Status/{print $2}')
+        if [[ x$ivpn != "xConnected" ]]; then
+                (sleep 1 && protonvpn c --sc)
+        else
+                sleep 30
+        fi
+done) &
