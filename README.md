@@ -66,7 +66,7 @@ https://docs.pi-hole.net/main/basic-install/
 
       Click OK twice
       
-### 9. Update your host OS DNS settings
+### 9. Update your host DNS settings
 
 https://www.windowscentral.com/how-change-your-pcs-dns-settings-windows-10
 
