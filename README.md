@@ -1,4 +1,4 @@
-# Fedora VM autostart VPN + pi-hole DNS
+# Fedora autostart VPN + pi-hole DNS
 
 ### 1. Install Fedora
 
