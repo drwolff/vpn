@@ -1,18 +1,16 @@
 # Fedora VM autostart VPN + pi-hole DNS
 
-### 1. Install VMware
+### 1. Install Fedora
 
-### 2. Create a new Fedora VM
+### 2. Log in as root
 
-### 3. Log into the Fedora VM as root
-
-### 4. Change runlevel to CLI 
+### 3. Change runlevel to CLI 
       
       systemctl set-default multi-user.target
       
       reboot
 
-### 5. Install & configure ProtonVPN
+### 4. Install & configure ProtonVPN
 
 https://protonvpn.com/support/linux-vpn-tool/
 
@@ -30,17 +28,17 @@ Connect to the fastest secure core server
       
       protonvpn c --sc
       
-### 6. Edit rc.local
+### 5. Edit rc.local
 
       vi /etc/rc.d/rc.local
 
 https://raw.githubusercontent.com/drwolff/immortal_vpn/master/protonvpn
       
-      chmod +x rc.local
+      chmod +x etc/rc.d/rc.local
       
       reboot
       
-### 7. install pi-hole
+### 6. install pi-hole
 
 https://github.com/pi-hole/pi-hole/#one-step-automated-install
 
@@ -48,7 +46,7 @@ https://docs.pi-hole.net/main/basic-install/
 
       curl -sSL https://install.pi-hole.net | bash
       
-### 8. Update VMware DNS settings
+### 7. Update DNS settings (VMware)
 
       Network and Internet settings
 
@@ -66,10 +64,10 @@ https://docs.pi-hole.net/main/basic-install/
 
       Click OK twice
       
-### 9. Update your host DNS settings
+### 8. Update your host DNS settings
 
 https://www.windowscentral.com/how-change-your-pcs-dns-settings-windows-10
 
 https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245
 
-### 10. Done
+### 9. Done
